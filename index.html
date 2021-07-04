@@ -74,15 +74,36 @@
        </div>
       </section>
 
-      <!--<section id="contact">
-        <h2 class="section_title">Contacto</h2>
-        <p>Dirección:</p>
-        <p>Av. Las Heras 512, M5500 Mendoza</p>
-        <p>Teléfono:</p>
-        <p>54-261-4258910</p>
-        <div class="map_container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53609.02109427781!2d-68.8935386750509!3d-32.883258240358636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0907b3f6324b%3A0x501d1521958dfb21!2sPlaza%20Independencia!5e0!3m2!1ses!2sar!4v1625368938927!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>-->
+      <section id="contact">
+        <div class="container mt-5">
+          <h2 class="section_title">Contacto</h2>
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="name" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="col-md-6">
+              <label for="lastName" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="lastName" required>
+            </div>
+            <div class="col-md-8">
+              <label for="emailInfo" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="emailInfo" required>
+            </div>
+            <div class="col-md-4">
+              <label for="phoneNumber" class="form-label">Número De Teléfono</label>
+              <input type="text" class="form-control" id="phoneNumber" placeholder="+54 (261) 567-8910">
+            </div>
+            <div class="col-md-12">
+              <label for="comments" class="form-label">Déjenos Su Consulta</label>
+              <textarea class="form-control" id="comments" rows="3" required></textarea>
+            </div>
+            <div class="col-md-12">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+        </div>
+
     </main>
     <footer>
       <div class="social_networks">
@@ -96,7 +117,9 @@
           <img src="./assets/img/icons/whatsapp.png" alt="">
         </a>
       </div>
-      <span> JMP.com 2021 All rights reserved.</span>
+      <div class="copyright">
+          <p> JMP.com 2021 All rights reserved.</p>
+      </div>
     </footer>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>

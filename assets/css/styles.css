@@ -75,8 +75,10 @@ main section{
 #us{
   padding-top: 2%;
 }
-#us p{
+#us .historia{
   text-align: justify;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 #catalogue{
   padding-top: 2%;

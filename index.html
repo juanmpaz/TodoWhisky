@@ -8,18 +8,20 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
+
   <body>
     <header>
     <!--NAV-->
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+        <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">
-          <img src="./assets/img/logo.png" alt="LOGO">
-        </a>
+        <div class="container-logo">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./assets/img/logo.png" alt="LOGO">
+          </a>
+        </div>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
@@ -35,51 +37,79 @@
             <a class="nav-link" href="#contact">Contacto</a>
           </li>
         </ul>
+      <div class="cart-button">
+      <div class="dropdown">
+        <button type="button" class="btn button-cart btn-warning dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+        <i class="fas fa-shopping-cart"></i>
+        </button>
+      </div>
+    </div>
         <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
+        <button class="btn btn-outline-warning" type="submit">Buscar</button>
         </form>
       </div>
     </div>
     </nav>
-    <!-- CIERRE NAV-->
     </header>
+
     <main>
+      <!--Banner-->
       <section id="banner">
-        <div class="banner_container">
+        <div class="banner-container">
           <img src="./assets/img/banner.png" alt="">
         </div>
       </section>
+      <!--Nosotros-->
       <section id="us">
-        <h2 class="section_title">Nosotros</h2>
+        <div class="us-title">
+          <h2 class="section-title">Nosotros</h2>
+        </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, commodi vel vitae repudiandae dolores ducimus voluptatem. Consectetur nulla recusandae aperiam dolorum mollitia asperiores error. Natus nobis odit, facere non possimus.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, recusandae inventore quidem eum molestias placeat sapiente cumque est nihil ratione quos, animi blanditiis minima illum nam ad architecto porro unde!</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ad, commodi reprehenderit fuga! Veritatis nam inventore fugiat tempore repellendus natus, voluptate quod minima nisi sit vero voluptatum debitis aperiam animi!</p>
       </section>
-      <section id="catalogue_title">
-        <h2 class="section_title">Catálogo</h2>
-      </section>
+      <!--Catalogo-->
       <section id="catalogue">
-        <div class="image_container">
-          <a class="internacionales_category" href="./catalogo/internacionales.html">
-            <img src="./assets/img/internacionales.jpg" alt="Internacionales">
-          </a>
+        <div class="catalogue-title">
+          <h2 class="section-title">Catálogo</h2>
         </div>
-        <div class="image_container">
-          <a class="americanos_category" href="./catalogo/americanos.html">
-            <img src="./assets/img/americanos.jpg" alt="Americanos">
-          </a>
+        <!--Catalogo: Imagenes-->
+        <div class="image-container">
+          <div class="card" style="width: 18rem;">
+            <a class="internacionales-category" href="./catalogo/internacionales.html">
+              <img src="./assets/img/internacionales.jpg" class="card-img-top" alt="Internacionales">
+            </a>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
         </div>
-        <div class="image_container">
-          <a class="blendedScotch_category" href="./catalogo/blendedScotch.html">
-            <img src="./assets/img/blendedscotch.jpg" alt="Blended Scotch">
-          </a>
-       </div>
+        <div class="image-container">
+          <div class="card" style="width: 18rem;">
+            <a class="americanos-category" href="./catalogo/americanos.html">
+              <img src="./assets/img/americanos.jpg" class="card-img-top" alt="Americanos">
+            </a>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="card" style="width: 18rem;">
+            <a class="blendedScotch-category" href="./catalogo/blendedScotch.html">
+              <img src="./assets/img/blendedscotch.jpg" class="card-img-top" alt="Blended Scotch">
+            </a>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
       </section>
-
+      <!--Contacto-->
       <section id="contact">
         <div class="container mt-5">
-          <h2 class="section_title">Contacto</h2>
+          <h2 class="section-title">Contacto</h2>
           <form class="row g-3">
             <div class="col-md-6">
               <label for="name" class="form-label">Nombre</label>
@@ -94,7 +124,7 @@
               <input type="email" class="form-control" id="emailInfo" required>
             </div>
             <div class="col-md-4">
-              <label for="phoneNumber" class="form-label">Número De Teléfono</label>
+              <label for="phoneNumber" class="form-label">Teléfono</label>
               <input type="text" class="form-control" id="phoneNumber" placeholder="+54 (261) 567-8910">
             </div>
             <div class="col-md-12">
@@ -106,39 +136,39 @@
             </div>
           </form>
         </div>
-
     </main>
-    <footer class="footer">
-      <div class="social_networks">
-        <a href="https://es-la.facebook.com/">
-          <img src="./assets/img/icons/facebook.png" alt="">
-        </a>
-        <a href="https://www.instagram.com/?hl=es-la">
-          <img src="./assets/img/icons/instagram.png" alt="">
-        </a>
-        <a href="https://web.whatsapp.com/">
-          <img src="./assets/img/icons/whatsapp.png" alt="">
-        </a>
-      </div>
-      <div class="copyright">
-          <p>Copyright © 2021 Todowhisky.com.ar</p>
-      </div>
-    <!--  <div class="container-footer">
-        <div class="row">
-          <div class="footer-col">
-            <h4>Siguenos</h4>
-            <div class="social-links">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
 
-            </div>
-          </div>
-        </div>
-
-      </div>-->
-
-    </footer>
+  <footer class="bg-dark text-center text-white">
+    <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://facebook.com" role="button">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com" role="button">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://instagram.com" role="button">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <!-- Youtube -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://youtube.com" role="button">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <!-- WhatsApp -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://api.whatsapp.com/send?phone=+542615678910" role="button">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </section>
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-white" href="https://todowhisky.com/">Todowhisky.com</a>
+  </div>
+  </footer>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>

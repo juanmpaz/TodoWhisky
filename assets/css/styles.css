@@ -3,6 +3,7 @@
 *{
   box-sizing: border-box;
 }
+
 body{
   margin: 0;
   padding: 0;
@@ -15,12 +16,17 @@ img{
   height: 100%;
 }
 /*HEADER*/
+
 .navbar{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 1px;
   padding-bottom: 1px;
+}
+.nav-item:hover {
+  background-color: #ffc107;
+  border-radius: 5px;
 }
 .container-logo a img{
   width: 55px;
@@ -97,6 +103,9 @@ main section{
   margin-top: 3%;
   margin-bottom: 3%;
 }
+.card-title{
+  height: 60px;
+}
 #contact{
   margin-bottom: 5%;
 }
@@ -110,16 +119,18 @@ main section{
   background-color: #fff;
   background-clip: border-box;
   border: 4px solid rgba(0,0,0,.125);
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   margin-bottom: 5%;
   margin-top: 0;
 }
 .product{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-wrap:wrap;
 }
-
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
 /*MEDIA QUERY*/
 
 /*Tablet*/
@@ -137,12 +148,15 @@ main section{
       white-space: nowrap;
     }
     .container-logo a img{
-      height: 60px;
-      width: 60px;
-      display:none;
+      height: 50px;
+      width: 50px;
+      display:block;
+    }
+    .navbar-nav{
+      padding-left: 15px;
     }
     .cart-button button{
-      margin-right: 20px;
+      margin-right: 20%;
     }
     .d-flex{
       width: 25%;
@@ -151,7 +165,7 @@ main section{
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      justify-content:space-between;
+      justify-content:space-around;
     }
 /*Fin tablet*/
 
@@ -175,10 +189,11 @@ main section{
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
     }
     #catalogue .catalogue-title{
       display:flex;
       justify-content: center;
     }
+
 /*Fin escritorio*/

@@ -37,7 +37,9 @@ img{
   color: rgba(255, 255, 255, 1);
   text-align: center;
 }
-
+.bg-dark{
+  background-color: rgb(0 0 0)!important;
+}
 .cart-button{
   display: flex;
   justify-content: center;
@@ -74,9 +76,15 @@ main section{
 .section-title{
   margin-top: 10px;
   margin-bottom: 10px;
+  font-size: 2rem;
 }
 .page-title{
   text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 1%;
+  background-color: rgba(255, 193, 7, 0.73);
+  font-family: fantasy;
+  font-size: 1.500rem + 1.5vh;
 }
 #us{
   padding-top: 2%;
@@ -85,9 +93,11 @@ main section{
   text-align: justify;
   margin-left: 10%;
   margin-right: 10%;
+  padding-bottom: 2%;
 }
 #catalogue{
   padding-top: 2%;
+  background-color: rgba(255, 193, 7, 0.3);
 }
 #catalogue .catalogue-title{
   display:inline;
@@ -161,6 +171,9 @@ main section{
     .d-flex{
       width: 25%;
     }
+    .section-title{
+      font-size: 2.5rem;
+    }
     #catalogue{
       display: flex;
       flex-wrap: wrap;
@@ -185,6 +198,9 @@ main section{
     .cart-button button{
       margin-right: 25px;
     }
+    .section-title{
+      font-size: 3rem;
+    }
     #catalogue{
       display: flex;
       flex-wrap: wrap;
@@ -195,5 +211,4 @@ main section{
       display:flex;
       justify-content: center;
     }
-
 /*Fin escritorio*/

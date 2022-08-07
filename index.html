@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>TODO WHISKY</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
 
-  <body>
-    <!--HEADER-->
-    <header>
+<head>
+  <meta charset="utf-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>TODO WHISKY</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!--HEADER-->
+  <header>
     <!--NAV-->
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
-        <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container-logo">
@@ -24,142 +28,151 @@
           </a>
         </div>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#us">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#catalogue">Catálogo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contacto</a>
-          </li>
-        </ul>
-        <div class="cart-button">
-          <div class="dropdown">
-          <button type="button" class="btn button-cart btn-warning dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
-            <i class="fas fa-shopping-cart"></i>
-          </button>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#us">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#catalogue">Catálogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contacto</a>
+            </li>
+          </ul>
+          <div class="cart-button">
+            <div class="dropdown">
+              <button type="button" class="btn button-cart btn-warning dropdown-toggle" data-bs-toggle="dropdown"
+                href="#" role="button" aria-expanded="false">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
           </div>
         </div>
+      </div>
+    </nav>
+  </header>
+  <!--MAIN-->
+  <main>
+    <!--Banner-->
+    <section id="banner">
+      <div class="banner-container">
+        <img src="./assets/img/banner.png" alt="">
+      </div>
+    </section>
+    <!--Nosotros-->
+    <section id="us">
+      <div class="us-title">
+        <h2 class="section-title">Nosotros</h2>
+      </div>
+      <div class="historia">
+        <p>En el año 2015 en la provincia de Mendoza, Argentina nace TODO WHISKY. Durante una charla de amigos y a
+          partir del gusto por el whisky surge la idea de comenzar este proyecto.</p>
+        <p>Decididos a compartir nuestros saberes, desarrollamos nuestra empresa para llegar a todos quienen desearan
+          disfrutar un buen vaso de whisky. </p>
+        <p>Hemos incorporado al mercado productos pensados siempre con la mentalidad de compartir conocimiento y crear
+          en nuestros clientes un momento agradable para disfrutar del whisky. Siendo éstos reconocidos por los altos
+          estándares de producción y obtención de prestigiosas menciones.</p>
+      </div>
+    </section>
+    <!--Catalogo-->
+    <section id="catalogue">
+      <div class="catalogue-title">
+        <h2 class="section-title">Catálogo</h2>
+      </div>
+      <!--Catalogo: Imagenes-->
+      <div class="image-container">
+        <div class="card" style="width: 18rem;">
+          <a class="internacionales-category" href="internacionales.html">
+            <img src="./assets/img/internacionales.jpg" class="card-img-top" alt="Internacionales">
+          </a>
         </div>
+      </div>
+      <div class="image-container">
+        <div class="card" style="width: 18rem;">
+          <a class="americanos-category" href="./americanos.html">
+            <img src="./assets/img/americanos.jpg" class="card-img-top" alt="Americanos">
+          </a>
         </div>
-      </nav>
-    </header>
-<!--MAIN-->
-    <main>
-      <!--Banner-->
-      <section id="banner">
-        <div class="banner-container">
-          <img src="./assets/img/banner.png" alt="">
+      </div>
+      <div class="image-container">
+        <div class="card" style="width: 18rem;">
+          <a class="blendedScotch-category" href="./blendedScotch.html">
+            <img src="./assets/img/blendedscotch.jpg" class="card-img-top" alt="Blended Scotch">
+          </a>
         </div>
-      </section>
-      <!--Nosotros-->
-      <section id="us">
-        <div class="us-title">
-          <h2 class="section-title">Nosotros</h2>
-        </div>
-        <div class="historia">
-          <p>En el año 2015 en la provincia de Mendoza, Argentina nace TODO WHISKY. Durante una charla de amigos y a partir del gusto por el whisky surge la idea de comenzar este proyecto.</p>
-          <p>Decididos a compartir nuestros saberes, desarrollamos nuestra empresa para llegar a todos quienen desearan disfrutar un buen vaso de whisky. </p>
-          <p>Hemos incorporado al mercado productos pensados siempre con la mentalidad de compartir conocimiento y crear en nuestros clientes un momento agradable para disfrutar del whisky. Siendo éstos reconocidos por los altos estándares de producción y obtención de prestigiosas menciones.</p>
-        </div>
-      </section>
-      <!--Catalogo-->
-      <section id="catalogue">
-        <div class="catalogue-title">
-          <h2 class="section-title">Catálogo</h2>
-        </div>
-        <!--Catalogo: Imagenes-->
-        <div class="image-container">
-          <div class="card" style="width: 18rem;">
-            <a class="internacionales-category" href="internacionales.html">
-              <img src="./assets/img/internacionales.jpg" class="card-img-top" alt="Internacionales">
-            </a>
-          </div>
-        </div>
-        <div class="image-container">
-          <div class="card" style="width: 18rem;">
-            <a class="americanos-category" href="./americanos.html">
-              <img src="./assets/img/americanos.jpg" class="card-img-top" alt="Americanos">
-            </a>
-          </div>
-        </div>
-        <div class="image-container">
-          <div class="card" style="width: 18rem;">
-            <a class="blendedScotch-category" href="./blendedScotch.html">
-              <img src="./assets/img/blendedscotch.jpg" class="card-img-top" alt="Blended Scotch">
-            </a>
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!--Contacto-->
-      <section id="contact">
-        <div class="container mt-5">
-          <h2 class="section-title">Contacto</h2>
-          <form class="row g-3">
-            <div class="col-md-6">
-              <label for="name" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="name" required>
-            </div>
-            <div class="col-md-6">
-              <label for="lastName" class="form-label">Apellido</label>
-              <input type="text" class="form-control" id="lastName" required>
-            </div>
-            <div class="col-md-8">
-              <label for="emailInfo" class="form-label">Correo Electrónico</label>
-              <input type="email" class="form-control" id="emailInfo" required>
-            </div>
-            <div class="col-md-4">
-              <label for="phoneNumber" class="form-label">Teléfono</label>
-              <input type="text" class="form-control" id="phoneNumber" placeholder="+54 (261) 567-8910">
-            </div>
-            <div class="col-md-12">
-              <label for="comments" class="form-label">Déjenos Su Consulta</label>
-              <textarea class="form-control" id="comments" rows="3" required></textarea>
-            </div>
-            <div class="col-md-12">
-              <button type="submit" class="btn btn-warning">Enviar</button>
-            </div>
-          </form>
-        </div>
-    </main>
-<!--FOOTER-->
-    <footer class="bg-dark text-center text-white">
+    <!--Contacto-->
+    <section id="contact">
+      <div class="container mt-5">
+        <h2 class="section-title">Contacto</h2>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="col-md-6">
+            <label for="lastName" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="lastName" required>
+          </div>
+          <div class="col-md-8">
+            <label for="emailInfo" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="emailInfo" required>
+          </div>
+          <div class="col-md-4">
+            <label for="phoneNumber" class="form-label">Teléfono</label>
+            <input type="text" class="form-control" id="phoneNumber" placeholder="+54 (261) 567-8910">
+          </div>
+          <div class="col-md-12">
+            <label for="comments" class="form-label">Déjenos Su Consulta</label>
+            <textarea class="form-control" id="comments" rows="3" required></textarea>
+          </div>
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-warning">Enviar</button>
+          </div>
+        </form>
+      </div>
+  </main>
+  <!--FOOTER-->
+  <footer class="bg-dark text-center text-white">
     <div class="container p-4">
-    <!-- Section: Social media -->
+      <!-- Section: Social media -->
       <section class="mb-4">
-      <!-- Facebook -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://facebook.com" role="button">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <!-- Twitter -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com" role="button">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <!-- Instagram -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://instagram.com" role="button">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <!-- Youtube -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://youtube.com" role="button">
-        <i class="fab fa-youtube"></i>
-      </a>
-      <!-- WhatsApp -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://api.whatsapp.com/send?phone=+542615678910" role="button">
-        <i class="fab fa-whatsapp"></i>
-      </a>
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://facebook.com" role="button">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com" role="button">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://instagram.com" role="button">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <!-- Youtube -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://youtube.com" role="button">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <!-- WhatsApp -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://api.whatsapp.com/send?phone=+542615678910"
+          role="button">
+          <i class="fab fa-whatsapp"></i>
+        </a>
       </section>
-  <!-- Copyright -->
+      <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2021 Copyright:
+        © 2021 Copyright:
         <a class="text-white" href="https://todowhisky.com/">Todowhisky.com</a>
       </div>
-    </footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>

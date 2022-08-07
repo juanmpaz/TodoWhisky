@@ -180,7 +180,8 @@ main section{
       flex-direction: row;
       justify-content:space-around;
     }
-/*Fin tablet*/
+  }
+
 
 /*Escritorio*/
 @media (min-width: 992px)  {
@@ -211,4 +212,4 @@ main section{
       display:flex;
       justify-content: center;
     }
-/*Fin escritorio*/
+  }

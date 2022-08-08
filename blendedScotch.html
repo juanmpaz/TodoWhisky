@@ -16,32 +16,42 @@
   <!--HEADER-->
   <header>
     <!--NAV-->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <!--NAV-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="container-logo">
+        <!-- logo -->
+        <div class="logo-container">
           <a class="navbar-brand" href="./index.html">
-            <img src="./assets/img/logo.png" alt="LOGO">
+            <img class="nav-img" src="./assets/img/logo.png" alt="LOGO">
           </a>
         </div>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <!-- menu button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- menu items -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://juanmpaz.github.io/TodoWhisky/index.html#us">Nosotros</a>
+              <a class="nav-link" href="./index.html#us">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://juanmpaz.github.io/TodoWhisky/index.html#catalogue">Catálogo</a>
+              <a class="nav-link" href="./index.html#catalogue">Catálogo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://juanmpaz.github.io/TodoWhisky/index.html#contact">Contacto</a>
+              <a class="nav-link" href="./index.html#contact">Contacto</a>
             </li>
           </ul>
+          <!-- search -->
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar por marca" aria-label="Search">
+            <button class="btn btn-outline-warning" type="submit">Buscar</button>
+          </form>
+          <!-- cart -->
           <div class="cart-button">
             <div class="dropdown">
               <button type="button" class="btn button-cart btn-warning dropdown-toggle" data-bs-toggle="dropdown"

@@ -5,7 +5,7 @@
 :root {
    --color-title: #001A49;
    --font-weight-title: 400;
-   --padding-container: 100px 0;
+   --padding-container: 40px 0;
 }
 
 * {
@@ -98,7 +98,7 @@ section {
    font-family: 'DM Serif Display', serif;
    display: block;
    text-align: center;
-   font-size: 2.5rem;
+   font-size: 3rem;
    color: var(--color-title);
    font-weight: var(--font-weight-title);
 }
@@ -112,6 +112,10 @@ section {
    font-size: 1.500rem + 1.5vh;
 }
 
+#us{
+   padding: 100px 0;
+   margin: 7% 7%;
+}
 .historia {
    text-align: justify;
    margin-left: 5%;

@@ -72,10 +72,8 @@
       </div>
     </section>
     <!--Nosotros-->
-    <section id="us">
-      <div class="us-title">
-        <h2 class="section-title">Nosotros</h2>
-      </div>
+    <section id="us" class="container">
+      <h2 class="section-title">NOSOTROS</h2>
       <div class="historia">
         <p>En el año 2015 en la provincia de Mendoza, Argentina nace TODO WHISKY. Durante una charla de amigos y a
           partir del gusto por el whisky surge la idea de comenzar este proyecto.</p>
@@ -88,29 +86,25 @@
     </section>
     <!--Catalogo-->
     <section id="catalogue">
-      <div class="catalogue-title">
-        <h2 class="section-title">Catálogo</h2>
-      </div>
-      <!--Catalogo: Imagenes-->
-      <div class="image-container">
-        <div class="card" style="width: 18rem;">
-          <a class="internacionales-category" href="internacionales.html">
-            <img src="./assets/img/internacionales.jpg" class="card-img-top" alt="Internacionales">
-          </a>
-        </div>
-      </div>
-      <div class="image-container">
-        <div class="card" style="width: 18rem;">
-          <a class="americanos-category" href="./americanos.html">
-            <img src="./assets/img/americanos.jpg" class="card-img-top" alt="Americanos">
-          </a>
-        </div>
-      </div>
-      <div class="image-container">
-        <div class="card" style="width: 18rem;">
-          <a class="blendedScotch-category" href="./blendedScotch.html">
-            <img src="./assets/img/blendedscotch.jpg" class="card-img-top" alt="Blended Scotch">
-          </a>
+      <div class="container">
+        <h2 class="section-title">CATÁLOGO</h2>
+        <!--Catalogo: Imagenes-->
+        <div class="catalogue-images">
+          <div class="catalogue-card">
+            <a class="internacionales-category" href="internacionales.html">
+              <img src="./assets/img/internacionales.jpg" class="card-img-top" alt="Internacionales">
+            </a>
+          </div>
+          <div class="catalogue-card">
+            <a class="americanos-category" href="./americanos.html">
+              <img src="./assets/img/americanos.jpg" class="card-img-top" alt="Americanos">
+            </a>
+          </div>
+          <div class="catalogue-card">
+            <a class="blendedScotch-category" href="./blendedScotch.html">
+              <img src="./assets/img/blendedscotch.jpg" class="card-img-top" alt="Blended Scotch">
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -118,27 +112,28 @@
     <!--Contacto-->
     <section id="contact">
       <div class="container mt-5">
-        <h2 class="section-title">Contacto</h2>
-        <form class="row g-3">
+        <h2 class="section-title">CONTACTO</h2>
+        <form class="row g-3" action="https://formspree.io/f/xwkzegaa" method="POST">
           <div class="col-md-6">
             <label for="name" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="name" required>
+            <input type="text" name="name" class="form-control" id="name" required>
           </div>
           <div class="col-md-6">
             <label for="lastName" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="lastName" required>
+            <input type="text" name="lastName" class="form-control" id="lastName" required>
           </div>
           <div class="col-md-8">
-            <label for="emailInfo" class="form-label">Correo Electrónico</label>
-            <input type="email" class="form-control" id="emailInfo" required>
+            <label for="emailAddress" class="form-label">Correo Electrónico</label>
+            <input type="email" name="_replyto" class="form-control" id="emailAddress" required>
           </div>
           <div class="col-md-4">
             <label for="phoneNumber" class="form-label">Teléfono</label>
-            <input type="text" class="form-control" id="phoneNumber" placeholder="+54 (261) 567-8910">
+            <input type="telephone" name="telephone" class="form-control" id="phoneNumber"
+              placeholder="+54 (11) 4567-8910">
           </div>
           <div class="col-md-12">
             <label for="comments" class="form-label">Déjenos Su Consulta</label>
-            <textarea class="form-control" id="comments" rows="3" required></textarea>
+            <textarea name="message" class="form-control" id="comments" rows="3" required></textarea>
           </div>
           <div class="col-md-12">
             <button type="submit" class="btn btn-warning">Enviar</button>
@@ -148,9 +143,10 @@
   </main>
   <!--FOOTER-->
   <footer class="bg-dark text-center text-white">
-    <div class="container p-4">
-      <!-- Section: Social media -->
-      <section class="mb-4">
+
+    <!-- Section: social media -->
+    <section class="container p-4">
+      <div class="social__media mb-4">
         <!-- Facebook -->
         <a class="btn btn-outline-light btn-floating m-1" href="https://facebook.com" role="button">
           <i class="fab fa-facebook-f"></i>
@@ -172,12 +168,14 @@
           role="button">
           <i class="fab fa-whatsapp"></i>
         </a>
-      </section>
-      <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2021 Copyright:
-        <a class="text-white" href="https://todowhisky.com/">Todowhisky.com</a>
       </div>
+      <!-- Copyright -->
+      <p>Copyright &copy; 2021 Todowhisky.com</p>
+      <!-- <div class="footer-copyright">
+        
+      </div> -->
+    </section>
+    
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
